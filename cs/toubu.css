@@ -1,0 +1,102 @@
+.headtou {
+    width: 70%;
+    height:53px;
+    margin:0 auto;
+    border-bottom: 1px solid grey;
+
+}
+
+ul{
+    list-style: none;
+
+}
+.tou{
+    float: left ;
+
+    /*margin-left:300px;*/
+
+}
+.Needhelp{
+   font-weight: bold;
+
+}
+
+.callus{
+    color:#C0C0C0;
+}
+.number{
+    color:red;
+}
+.Register{
+
+    padding-right: 35px;
+    /*border-right: 1px solid #C0C0C0;*/
+    position: relative;
+    left: 500px;
+    top: 15px;
+}
+.Login{
+    padding-right: 30px;
+    /*border-right: 1px solid #C0C0C0;*/
+    position: relative;
+    left: 630px;
+    top: -5px;
+}
+.Delivery{
+    padding-right: 25px;
+    /*border-right: 1px solid #C0C0C0;*/
+    position: relative;
+    left: 730px;
+    top: -25px;
+}
+.Checkout{
+    padding-right: 25px;
+    /*border-right: 1px solid #C0C0C0;*/
+    position: relative;
+    left: 1080px;
+    top: -45px;
+}
+.MyAccount{
+    position: relative;
+    left: 1200px;
+    top: -65px;
+}
+a{
+    text-decoration: none;
+    color:#C0C0C0;
+
+}
+a:hover{
+    color: red;
+}
+
+.toubu ul li a{
+    position:relative;
+}
+.toubu ul li a::after {
+    content:"";
+    position: absolute;
+    border: 1px dashed #ccc;
+    height: 17px;
+    top: 1px;
+    left: 84px;
+}
+.toubu ul li a.Register::after{
+    left: 95px;
+}
+.toubu ul li a.Login::after{
+    left: 70px;
+}
+.toubu ul li a.Delivery::after{
+    left: 88px;
+}
+
+.toubu ul li a.Checkout::after{
+    left: 95px;
+}
+.toubu ul li a.MyAccount::after{
+    border: none;
+}
+.home a{
+    font-size: 30px;
+}
