@@ -1,3 +1,10 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+
+
 .headtou {
     width: 70%;
     height:53px;
@@ -12,7 +19,7 @@ ul{
 }
 .tou{
     float: left ;
-
+    padding-top: 15px;
     /*margin-left:300px;*/
 
 }
@@ -32,41 +39,41 @@ ul{
     padding-right: 35px;
     /*border-right: 1px solid #C0C0C0;*/
     position: relative;
-    left: 500px;
+    left: 510px;
     top: 15px;
 }
 .Login{
     padding-right: 30px;
     /*border-right: 1px solid #C0C0C0;*/
     position: relative;
-    left: 630px;
+    left: 640px;
     top: -5px;
 }
 .Delivery{
     padding-right: 25px;
     /*border-right: 1px solid #C0C0C0;*/
     position: relative;
-    left: 730px;
+    left: 1015px;
     top: -25px;
 }
 .Checkout{
     padding-right: 25px;
     /*border-right: 1px solid #C0C0C0;*/
     position: relative;
-    left: 1080px;
+    left: 1130px;
     top: -45px;
 }
 .MyAccount{
     position: relative;
-    left: 1200px;
+    left: 1250px;
     top: -65px;
 }
-a{
+.toubu a{
     text-decoration: none;
     color:#C0C0C0;
 
 }
-a:hover{
+.toubu a:hover{
     color: red;
 }
 
@@ -97,6 +104,61 @@ a:hover{
 .toubu ul li a.MyAccount::after{
     border: none;
 }
-.home a{
-    font-size: 30px;
+.homeshoppe{
+    font-size: 20px;
+    text-decoration:none;
+    color: #000;
+}
+.gouwuche{
+    position: relative;
+    float: right;
+    top: 27px;
+}
+.cart{
+    font-size: 25px;
+    color: red;
+
+}
+.xuanqukuang ul{
+    float:left;
+    width: 100%;
+    margin:50px auto;
+    background:#202020;
+}
+.xuanqukuang ul li a {
+    text-decoration: none;
+    color: #C0C0C0;
+    /*border-radius: 6px;*/
+}
+.xuanqukuang ul li{
+    height: 40px;
+    /*border: solid 10px black;*/
+    float: left;
+    background-color: #202020;
+    color: #282828;
+    border-right: 1px solid gray;
+}
+.xuanqukuang ul li a {
+    display:inline-block;
+    height: 100%;
+    line-height: 40px;
+    padding: 0 18px;
+}
+.xuanqukuang a:hover{
+    background-color:
+    #D80000;
+    /*padding:10px 15px;*/
+    transition: all .9s;
+    /*border-radius:6px;*/
+}
+#sousuokuang{
+    float:right;
+    margin: 8px;
+    left: 10px;
+}
+form#sousuokuang input[type="text"]{
+    margin: 0px 150px 0 0;
+    left: 50px;
+    width: 100%;
+
 }
