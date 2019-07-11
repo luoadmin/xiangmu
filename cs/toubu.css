@@ -12,7 +12,6 @@ a{
     height:53px;
     margin:0 auto;
     border-bottom: 1px solid grey;
-
 }
 
 ul{
@@ -126,6 +125,7 @@ ul{
     width: 100%;
     margin:50px auto;
     background:#202020;
+    border-radius: 5px;
 }
 .xuanqukuang ul li a {
     text-decoration: none;
@@ -139,12 +139,14 @@ ul{
     background-color: #202020;
     color: #282828;
     border-right: 1px solid gray;
+    border-radius: 10%;
 }
 .xuanqukuang ul li a {
     display:inline-block;
     height: 100%;
     line-height: 40px;
     padding: 0 18px;
+
 }
 .xuanqukuang a:hover{
     background-color:
@@ -152,6 +154,7 @@ ul{
     /*padding:10px 15px;*/
     transition: all .5s;
     /*border-radius:6px;*/
+    border-radius: 10%;
 }
 #sousuokuang{
     float:right;
@@ -159,10 +162,10 @@ ul{
     left: 10px;
 }
 form#sousuokuang input[type="text"]{
-    margin: 0px 150px 0 0;
+    margin: 0px 5px 0 0;
     left: 50px;
-    width: 100%;
-
+    width: 250px;
+    border-radius:   5px;
 }
 #sousuokuang input[type="submit"]{
     background: url("../image/fangdajing.jpg");
@@ -170,10 +173,11 @@ form#sousuokuang input[type="text"]{
     width: 20px;
     height: 20px;
     position: absolute;
-    right: 287px;
+    right: 296px;
     float: right;
     border: none;
     top: 230px;
+
 }
 .zuobian {
     float: left;
@@ -219,6 +223,7 @@ form#sousuokuang input[type="text"]{
     width: 33.33%;
     height: 100%;
     position:relative;
+
 }
 .youbian ul{
     width: 300%;
@@ -230,7 +235,7 @@ form#sousuokuang input[type="text"]{
 }
 @keyframes run {
     0%{ right: 0px;}
-    22%{right: 968px;}
+    22%{right: 0px;}
     44%{right: 975px;}
     66%{right: 975px;}
     88%{right: 1945px;}
@@ -239,11 +244,233 @@ form#sousuokuang input[type="text"]{
 .youbian>ul>li .a{
    width: 995px;
 }
-h1,h2,h4{
+
+.youbian ul li .imgtext{
     position: absolute;
-    /*right: 100px;*/
-    /*bottom: 20px;*/
+    top: 60px;
+    left: 550px;
+}
+.youbian ul li .imgtext h1{
+    font-size: 2.5em;
     color: red;
-    top:0;
-    left:0;
+    text-transform: uppercase;
+}
+.youbian ul li .imgtext h1 span{
+    font-size: 3em;
+}
+.youbian ul li .imgtext h2{
+    font-size: 2em;
+    color: #808080;
+}
+.youbian ul li .imgtext h4{
+    font-size: 1.2em;
+    color: #222;
+}
+.youbian ul li a{
+    /*border: 1px solid red;*/
+    background-color: red;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 20px;
+    display: inline-block;
+    padding:  10px 10px;
+    font-weight: bold;
+}
+.youbian ul li a:hover{
+    transform: scale(1.1);
+}
+.youbian ul li .imgtext-2{
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+.youbian ul li .imgtext-2 h1{
+    font-size: 2.5em;
+    color: red;
+    text-transform: uppercase;
+}
+.youbian ul li .imgtext-2 h1 span{
+    font-size: 3em;
+}
+.youbian ul li .imgtext-2 h2{
+    font-size: 2em;
+    color: #808080;
+}
+.content_top{
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 15px 20px;
+    width: 1295px;
+    margin: 760px 285px 0  auto;
+}
+.content_top h3{
+    font-size: 22px;
+    text-transform:uppercase;
+    color: #585858;
+}
+.content_top a{
+    float: right;
+    display: inline;
+    margin: -25px 25px;
+    background: url("../image/shangbiao.jpg") no-repeat ;
+    color: #C0C0C0;
+    background-size: 17px 17px;
+    padding: 0 23px 0 0px;
+    background-position: center right;
+    font-size: 0.9em;
+}
+.content_top a:hover{
+    color: red;
+}
+.sectiongroup{
+    width: 1332px;
+    clear: both;
+    margin-top: 10px;
+    padding-left: 280px;
+    display: flex;/*标签下的全浮动*/
+    justify-content: space-between;
+}
+.section_img1{
+    /*float: left;*/
+    border: 2px solid white;
+    padding: 20px;
+    width: 23%;
+    text-align: center;
+    position: relative;
+    display: block;
+    margin: 1% 0 1% 1.6%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 2px #707070 inset;
+    border:none;/*去除边框*/
+    outline:none;/*去除轮廓*/
+}
+.section_img1 img{
+    width: 100%;
+    object-fit: cover;
+}
+.section_img1:hover{
+    transform: scale(1.1);
+}
+.section_img1:first-child{
+    margin-left: 0;
+}
+.section_img1 h2{
+    font-size: 1.1em;
+    border-bottom: 2px solid red;
+    color: #707070;
+}
+.jiage{
+    margin-top: 15px;
+     float: left;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.section_img1 h4 a{
+    float: right;
+    margin: 15px 0 0 0;
+    background-color: red;
+    color: white;
+    font-size: 1.1em;
+    padding: 5px;
+}
+.section_img1 h4 a:hover{
+    transform: scale(1.2);
+    background-color: #FFFFFF;
+    color: black;
+}
+.content_top2{
+    border: 1px solid grey;
+    /*border-radius: 3px;*/
+    padding: 15px 20px;
+    width: 1295px;
+    margin: 10px 285px 0  auto;
+}
+.content_top2 a{
+    float: right;
+    display: inline;
+    margin: -25px 25px;
+    background: url("../image/shangbiao.jpg") no-repeat ;
+    color: #C0C0C0;
+    background-size: 17px 17px;
+    padding: 0 23px 0 0px;
+    background-position: center right;
+    font-size: 0.9em;
+}
+.content_top2 h3{
+    font-size: 22px;
+    text-transform:uppercase;
+    color: #585858;
+}
+.content_top2 a:hover{
+    color: red;
+}
+.sectiongroup2{
+    width: 1332px;
+    clear: both;
+    margin-top: 10px;
+    padding-left: 280px;
+    display: flex;/*标签下的全浮动*/
+    justify-content: space-between;
+}
+.section_img2{
+    /*float: left;*/
+    border: 2px solid white;
+    padding: 20px;
+    width: 23%;
+    text-align: center;
+    position: relative;
+    display: block;
+    margin: 1% 0 1% 1.6%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 2px #707070 inset;
+    border:none;/*去除边框*/
+    outline:none;/*去除轮廓*/
+}
+.section_img2 img{
+    width: 100%;
+    object-fit: cover;
+}
+.section_img2:hover{
+    transform: scale(1.1);
+}
+.section_img2:first-child{
+    margin-left: 0;
+}
+.section_img2 h2 {
+    font-size: 1.1em;
+    border-bottom: 2px solid red;
+    color: #707070;
+}
+.jiage2{
+    float: left;
+    margin-top: 10px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.section_img2 h4 a{
+    margin-top: 10px;
+    float: right;
+    background-color: red;
+    color: white;
+    font-size: 1.1em;
+    padding: 5px;
+}
+.section_img2 h4 a:hover{
+    transform: scale(1.2);
+    background-color: #FFFFFF;
+    color: black;
+}
+.xiahuaxian{
+    margin: 0 auto;
+    height: 35px;
+    border-bottom: 1px solid red;
+}
+.huikui{
+   width: 1350px;
+   margin: 0 auto;
+}
+.xinxi{
+    width: 20.5%;
+    padding: 1.5% 1.5% 0 0;
+   border-left: 1px solid red;
 }
