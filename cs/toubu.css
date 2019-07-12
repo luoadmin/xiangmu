@@ -115,6 +115,15 @@ ul{
     float: right;
     top: 27px;
 }
+.gouwuche2{
+    display:none;
+    border: 1px solid black;
+}
+.gouwuche span a img:hover{
+    display:list-item;
+}
+
+
 .cart{
     font-size: 25px;
     color: red;
@@ -463,7 +472,7 @@ form#sousuokuang input[type="text"]{
 .xiahuaxian{
     margin: 0 auto;
     height: 35px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #CECECE;
 }
 .huikui{
    width: 1350px;
@@ -471,6 +480,140 @@ form#sousuokuang input[type="text"]{
 }
 .xinxi{
     width: 20.5%;
-    padding: 1.5% 1.5% 0 0;
-   border-left: 1px solid red;
+    border-left: 1px solid #CECECE;
 }
+.xinxi  h4{
+    border-bottom: 1px solid #CECECE;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 1.3em;
+
+}
+.xinxi ul li {
+    padding-top: 10px;
+    padding-left: 20px;
+
+}
+.xinxi ul li a{
+    color: #2A5C86;
+    font-size: 15px;
+}
+.xinxi ul li a:hover{
+    color: red;
+}
+.weihe{
+    width: 20.5%;
+    border-left: 1px solid #CECECE;
+    float: right;
+    margin-top: -223px;
+    margin-right: 725px;
+    height: 223px;
+}
+.weihe h4{
+    font-size: 1.3em;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CECECE;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.weihe ul li{
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+.weihe ul li a{
+    color: #2A5C86;
+}
+.weihe ul li a:hover{
+    color: red;
+}
+.wode{
+    width: 20.5%;
+    border-left: 1px solid #CECECE;
+    float: right;
+    margin-top: -223px;
+    margin-right: 385px;
+}
+.wode h4 {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 1.3em;
+    border-bottom: 1px solid #CECECE;
+}
+.wode ul li {
+     padding-left: 20px;
+    padding-top: 10px;
+}
+.wode ul li a{
+    color: #2A5C86;
+    font-size: 15px;
+}
+.wode ul li a:hover{
+    color: red;
+}
+.xianxi{
+    width: 20.5%;
+    border-left: 1px solid #CECECE  ;
+    float: right;
+    margin-top: -223px;
+    margin-right: 43px;
+    height: 255px;
+}
+.xianxi h4{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CECECE;
+    font-size: 1.2em;
+}
+.xianxi ul li{
+     padding-top: 10px;
+    padding-left: 20px;
+}
+.xianxi ul li a{
+    color: #2A5C86;
+    font-size: 15px;
+}
+.xianxi ul li a:hover{
+    color: red;
+}
+.xianxi ul h3{
+    padding-top: 35px;
+    padding-left: 20px;
+    border-bottom: 1px solid #CECECE;
+    font-size: 1.3em;
+    padding-bottom: 15px;
+}
+.xianxi ul h3 a{
+    color: #909090;
+}
+.xianxi ul a img{
+   padding-left: 30px;
+    padding-top: 10px;
+}
+.xianxi ul a img{
+    padding-left: 15px;
+    padding-top: -10px;
+}
+.dibu{
+    border-top: 1px solid #CECECE;
+    margin-top: 48px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+.dibu span{
+    text-align: center;
+    color: #282828;
+    margin-top: 15px;
+    display: block;
+    font-size: 0.823em;
+}
+.dibu span a{
+    color: red;
+}
+.dibu span a:hover{
+    color: black;
+}
+
