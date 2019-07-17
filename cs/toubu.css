@@ -12,11 +12,12 @@ a{
     height:53px;
     margin:0 auto;
     border-bottom: 1px solid grey;
+
+
 }
 
 ul{
     list-style: none;
-
 }
 .tou{
     float: left ;
@@ -115,9 +116,19 @@ ul{
     float: right;
     top: 27px;
 }
+#im1{
+    position: relative;
+}
 .gouwuche2{
-    display:none;
-    border: 1px solid black;
+    display: none;
+    /*margin-left:1003px;*/
+    position: absolute;
+    border: 1px solid white;
+    width: 445px;
+    margin-top: 5px;
+    background-color: #EEE;
+    padding: 10px 0;
+    border-radius: 10px;
 }
 .gouwuche span a img:hover{
     display:list-item;
@@ -227,6 +238,7 @@ form#sousuokuang input[type="text"]{
     border: 1px solid grey;
      float: left;
     overflow: hidden;
+    position: relative;
 }
 .youbian ul li {
     width: 33.33%;
@@ -311,6 +323,7 @@ form#sousuokuang input[type="text"]{
     padding: 15px 20px;
     width: 1295px;
     margin: 760px 285px 0  auto;
+
 }
 .content_top h3{
     font-size: 22px;
@@ -336,7 +349,7 @@ form#sousuokuang input[type="text"]{
     clear: both;
     margin-top: 10px;
     padding-left: 280px;
-    display: flex;/*±êÇ©ÏÂµÄÈ«¸¡¶¯*/
+    display: flex;/*ï¿½ï¿½Ç©ï¿½Âµï¿½È«ï¿½ï¿½ï¿½ï¿½*/
     justify-content: space-between;
 }
 .section_img1{
@@ -350,8 +363,8 @@ form#sousuokuang input[type="text"]{
     margin: 1% 0 1% 1.6%;
     box-sizing: border-box;
     box-shadow: 1px 1px 1px 2px #707070 inset;
-    border:none;/*È¥³ý±ß¿ò*/
-    outline:none;/*È¥³ýÂÖÀª*/
+    border:none;/*È¥ï¿½ï¿½ï¿½ß¿ï¿½*/
+    outline:none;/*È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 }
 .section_img1 img{
     width: 100%;
@@ -418,7 +431,7 @@ form#sousuokuang input[type="text"]{
     clear: both;
     margin-top: 10px;
     padding-left: 280px;
-    display: flex;/*±êÇ©ÏÂµÄÈ«¸¡¶¯*/
+    display: flex;/*ï¿½ï¿½Ç©ï¿½Âµï¿½È«ï¿½ï¿½ï¿½ï¿½*/
     justify-content: space-between;
 }
 .section_img2{
@@ -432,8 +445,8 @@ form#sousuokuang input[type="text"]{
     margin: 1% 0 1% 1.6%;
     box-sizing: border-box;
     box-shadow: 1px 1px 1px 2px #707070 inset;
-    border:none;/*È¥³ý±ß¿ò*/
-    outline:none;/*È¥³ýÂÖÀª*/
+    border:none;/*È¥ï¿½ï¿½ï¿½ß¿ï¿½*/
+    outline:none;/*È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 }
 .section_img2 img{
     width: 100%;
