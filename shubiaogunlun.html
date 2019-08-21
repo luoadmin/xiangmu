@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0
+		}
+    #container {
+    position: absolute;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    left: 0;
+    right: 0;
+    overflow: auto;
+  }
+
+
+		#d1{
+      width: 100px;
+      height: 60px;
+			border: 2px solid red;
+			margin: auto;
+      position: fixed;
+      bottom: 100px;
+      right: 100px;
+      /*display: block;*/
+      opacity: 0;
+      transition: all 2s linear;
+		}
+    .show {
+      /*display: none;*/
+      opacity: 1 !important;
+
+    }
+
+	</style>
+	<script type="text/javascript" src="jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="jquery.mousewheel.min.js"></script>
+	
+</head>
+<body>
+  <div id="container">
+    
+<div id="d1">往下滚</div>
+   <img src="../beijingtu.jpg">
+   <img src="../beijingtu.jpg">
+   <img src="../beijingtu.jpg">
+   <img src="../beijingtu.jpg">
+   <img src="../beijingtu.jpg">
+   <img src="../beijingtu.jpg">
+   <img src="../beijingtu.jpg">
+   <img src="../beijingtu.jpg">
+   <img src="../beijingtu.jpg">
+   <img src="../beijingtu.jpg">
+
+
+  </div>
+   
+
+
+<script type="text/javascript">
+    // var d1 = document.addEventListener("d1");
+    // $(function() {
+    //   $('body').mousewheel(function(event, delta) {
+    //     // var dir = delta > 0 ? 'Up' : 'Down';
+    / /     // if (dir == 'Up') {
+    //     //     console.log('向上滚动');
+    //     // } else {
+    //     //     console.log('向下滚动');
+    //     // }
+    //     var dat = $('#d1').scrollTop
+    //     return false;
+
+    //  });
+    // })
+    document.getElementById('container').onscroll = function() {
+      console.log(this.scrollTop);
+      if(this.scrollTop > 1000 && d1.className != "show") {
+        d1.classList.add('show');
+        console.log(d1.className)
+      }
+        // console.log(d1);
+      else if(this.scrollTop < 1000 && d1.className == "show"){
+        d1.classList.remove('show');
+      }
+    }
+  </script>
+</body>
+</html>

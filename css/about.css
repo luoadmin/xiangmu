@@ -12,6 +12,7 @@ a{
     height:53px;
     margin:0 auto;
     border-bottom: 1px solid grey;
+    padding-top: 15px;
 
 
 }
@@ -106,6 +107,9 @@ ul{
 .toubu ul li a.MyAccount::after{
     border: none;
 }
+/*.toubu{
+    border-bottom: 1px solid black;
+}*/
 .homeshoppe{
     font-size: 20px;
     text-decoration:none;
@@ -119,6 +123,7 @@ ul{
 #im1{
     position: relative;
 }
+
 .gouwuche2{
     display: none;
     /*margin-left:1003px;*/
@@ -130,8 +135,12 @@ ul{
     padding: 10px 0;
     border-radius: 10px;
 }
+.gouwuche:hover .gouwuche2 {
+    display:block;
+}
 .gouwuche span a img:hover{
     display:list-item;
+    /*display:block;*/
 }
 
 
@@ -149,7 +158,7 @@ ul{
 }
 .xuanqukuang ul li a {
     text-decoration: none;
-    color: #C0C0C0;
+    color: rgb(192,192,192);
     /*border-radius: 6px;*/
 }
 .xuanqukuang ul li{
@@ -157,8 +166,8 @@ ul{
     /*border: solid 10px black;*/
     float: left;
     background-color: #202020;
-    color: #282828;
-    border-right: 1px solid gray;
+    color: #fff;
+    border-right: 1px ridge #585858;
     border-radius: 10%;
 }
 .xuanqukuang ul li a {
@@ -166,15 +175,22 @@ ul{
     height: 100%;
     line-height: 40px;
     padding: 0 18px;
+    font-family: 'ambleregular';
+    text-transform: uppercase;
+    transition: all .9s;
 
 }
 .xuanqukuang a:hover{
     background-color:
-    #D80000;
+    /*#B81D22;*/
+    red;
     /*padding:10px 15px;*/
     transition: all .5s;
     /*border-radius:6px;*/
     border-radius: 10%;
+}
+.xuanqukuang li.active a{
+    background: red;
 }
 #sousuokuang{
     float:right;
@@ -193,298 +209,88 @@ form#sousuokuang input[type="text"]{
     width: 20px;
     height: 20px;
     position: absolute;
-    right: 296px;
+    right: 295px;
     float: right;
     border: none;
-    top: 230px;
+    top: 231px;
 
 }
-.zuobian {
+.zhongjian{
+    clear:both;
+    /*border: 1px  solid black;*/
+    width: 100%;
+    /*height: 100%;*/
+    /*position: relative;*/
+}
+.zhongzuo{
+     /*clear:both;*/
+    /*border: 1px solid black;*/
+    /*height: 10px;*/
+    /*position: absolute;*/
+    width: 33%;
     float: left;
-    width: 25%;
-    border: 2px solid gray;
-    margin-top: -20px;
 }
-.zuobian ul li {
-    margin: 0  20px;
-    padding: 8px 15px ;
-   border-bottom: 1px solid #C0C0C0;
-
-}
-.zuobian ul li a{
-    text-decoration: none;
-    color: #808080;
-    font-size: 0.8em;
-    background: url("../image/shangbiao.jpg") no-repeat 0;
-    background-size: 17px 17px;
-    padding: 0 0 0 24px;
-
-
-}
-.zuobian ul li a:hover{
-    color: red;
-
-}
-.categories{
-    background-color: red;
-    padding: 10px;
-   color: white;
-    font-size: 1.2em;
-}
-.youbian{
-  margin: -20px 0px 0 20px ;
-    height: 503px;
-    width: 973px;
-    border: 1px solid grey;
-     float: left;
-    overflow: hidden;
-    position: relative;
-}
-.youbian ul li {
-    width: 33.33%;
-    height: 100%;
-    position:relative;
-
-}
-.youbian ul{
-    width: 300%;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    flex-wrap: nowrap;
-    animation: run 6s infinite;
-}
-@keyframes run {
-    0%{ right: 0px;}
-    22%{right: 0px;}
-    44%{right: 975px;}
-    66%{right: 975px;}
-    88%{right: 1945px;}
-    100%{right: 1945px;}
-}
-.youbian>ul>li .a{
-   width: 995px;
-}
-
-.youbian ul li .imgtext{
-    position: absolute;
-    top: 60px;
-    left: 550px;
-}
-.youbian ul li .imgtext h1{
-    font-size: 2.5em;
-    color: red;
+.zhongjian h3{
+    color:#383838;
+    font-size: 1.5em;
+    line-height: 1.2;
+    font-family: 'ambleregular';
+    font-weight: normal;
     text-transform: uppercase;
 }
-.youbian ul li .imgtext h1 span{
-    font-size: 3em;
+.zhongzuo img{
+    margin-top: 30px;   
 }
-.youbian ul li .imgtext h2{
-    font-size: 2em;
-    color: #808080;
+.zhongzuo p {
+    line-height: 30px;
+    font-size: 0.8rem;
 }
-.youbian ul li .imgtext h4{
-    font-size: 1.2em;
-    color: #222;
+.zhongzhong{
+    /*position: absolute;*/
+    margin-left: 30px;
+    width: 33%;
+    float: left;
+    display: block;
 }
-.youbian ul li a{
-    /*border: 1px solid red;*/
-    background-color: red;
-    color: white;
-    font-size: 1.2em;
+.year span{
+    color: red;
+     float: left;
+    width: 50px;
+    font-size: 0.8rem;
     margin-top: 20px;
-    display: inline-block;
-    padding:  10px 10px;
-    font-weight: bold;
+    line-height: 1.8em;
 }
-.youbian ul li a:hover{
-    transform: scale(1.1);
-}
-.youbian ul li .imgtext-2{
-    position: absolute;
-    top: 60px;
-    left: 50px;
-}
-.youbian ul li .imgtext-2 h1{
-    font-size: 2.5em;
-    color: red;
-    text-transform: uppercase;
-}
-.youbian ul li .imgtext-2 h1 span{
-    font-size: 3em;
-}
-.youbian ul li .imgtext-2 h2{
-    font-size: 2em;
-    color: #808080;
-}
-.content_top{
-    border: 1px solid grey;
-    border-radius: 3px;
-    padding: 15px 20px;
-    width: 1295px;
-    margin: 760px 285px 0  auto;
-
-}
-.content_top h3{
-    font-size: 22px;
-    text-transform:uppercase;
-    color: #585858;
-}
-.content_top a{
-    float: right;
-    display: inline;
-    margin: -25px 25px;
-    background: url("../image/shangbiao.jpg") no-repeat ;
-    color: #C0C0C0;
-    background-size: 17px 17px;
-    padding: 0 23px 0 0px;
-    background-position: center right;
-    font-size: 0.9em;
-}
-.content_top a:hover{
-    color: red;
-}
-.sectiongroup{
-    width: 1332px;
-    clear: both;
-    margin-top: 10px;
-    padding-left: 280px;
-    display: flex;/*��ǩ�µ�ȫ����*/
-    justify-content: space-between;
-}
-.section_img1{
-    /*float: left;*/
-    border: 2px solid white;
-    padding: 20px;
-    width: 23%;
-    text-align: center;
-    position: relative;
-    display: block;
-    margin: 1% 0 1% 1.6%;
-    box-sizing: border-box;
-    box-shadow: 1px 1px 1px 2px #707070 inset;
-    border:none;/*ȥ���߿�*/
-    outline:none;/*ȥ������*/
-}
-.section_img1 img{
-    width: 100%;
-    object-fit: cover;
-}
-.section_img1:hover{
-    transform: scale(1.1);
-}
-.section_img1:first-child{
-    margin-left: 0;
-}
-.section_img1 h2{
-    font-size: 1.1em;
-    border-bottom: 2px solid red;
-    color: #707070;
-}
-.jiage{
-    margin-top: 15px;
-     float: left;
-    font-size: 1.6em;
-    font-weight: bold;
-}
-.section_img1 h4 a{
-    float: right;
-    margin: 15px 0 0 0;
-    background-color: red;
-    color: white;
-    font-size: 1.1em;
-    padding: 5px;
-}
-.section_img1 h4 a:hover{
-    transform: scale(1.2);
-    background-color: #FFFFFF;
-    color: black;
-}
-.content_top2{
-    border: 1px solid grey;
-    /*border-radius: 3px;*/
-    padding: 15px 20px;
-    width: 1295px;
-    margin: 10px 285px 0  auto;
-}
-.content_top2 a{
-    float: right;
-    display: inline;
-    margin: -25px 25px;
-    background: url("../image/shangbiao.jpg") no-repeat ;
-    color: #C0C0C0;
-    background-size: 17px 17px;
-    padding: 0 23px 0 0px;
-    background-position: center right;
-    font-size: 0.9em;
-}
-.content_top2 h3{
-    font-size: 22px;
-    text-transform:uppercase;
-    color: #585858;
-}
-.content_top2 a:hover{
-    color: red;
-}
-.sectiongroup2{
-    width: 1332px;
-    clear: both;
-    margin-top: 10px;
-    padding-left: 280px;
-    display: flex;/*��ǩ�µ�ȫ����*/
-    justify-content: space-between;
-}
-.section_img2{
-    /*float: left;*/
-    border: 2px solid white;
-    padding: 20px;
-    width: 23%;
-    text-align: center;
-    position: relative;
-    display: block;
-    margin: 1% 0 1% 1.6%;
-    box-sizing: border-box;
-    box-shadow: 1px 1px 1px 2px #707070 inset;
-    border:none;/*ȥ���߿�*/
-    outline:none;/*ȥ������*/
-}
-.section_img2 img{
-    width: 100%;
-    object-fit: cover;
-}
-.section_img2:hover{
-    transform: scale(1.1);
-}
-.section_img2:first-child{
-    margin-left: 0;
-}
-.section_img2 h2 {
-    font-size: 1.1em;
-    border-bottom: 2px solid red;
-    color: #707070;
-}
-.jiage2{
+.zhongzhong p{
     float: left;
-    margin-top: 10px;
-    font-size: 1.6em;
-    font-weight: bold;
+    width: 85%;
+    font-size: 0.8rem;
+    color: #727272;
+    line-height: 1.8em;
+    margin-top: 20px;   
 }
-.section_img2 h4 a{
-    margin-top: 10px;
-    float: right;
-    background-color: red;
-    color: white;
-    font-size: 1.1em;
-    padding: 5px;
+.zhongyou p{
+    font-size: 0.8rem;
+    color: #727272;
+    line-height: 1.8em;
+    margin-top: 20px;   
+    margin-bottom: 10px;
 }
-.section_img2 h4 a:hover{
-    transform: scale(1.2);
-    background-color: #FFFFFF;
-    color: black;
+.zhongyou li a {
+    font-size: 0.82em;
+    padding: 7px 20px;
+    /*margin-bottom: 1px;*/
+    color:#E4292F;
+    background: url("../image/drop_arrow.jpg") no-repeat 0px 10px;
+    display: flex;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.zhongyou li a:hover{
+    /*border-bottom: 1px solid red;*/
+    text-decoration: underline;
 }
 .xiahuaxian{
     margin: 0 auto;
-    height: 35px;
+    height: 157px;
     border-bottom: 1px solid #CECECE;
 }
 .huikui{
@@ -629,4 +435,17 @@ form#sousuokuang input[type="text"]{
 .dibu span a:hover{
     color: black;
 }
+#toTop img:hover{
 
+}
+
+
+.wrap {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.tzhui {
+    position: relative;
+    top: 80px;
+}
